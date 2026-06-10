@@ -5,22 +5,20 @@
 :root {
     --sidebar-bg: #0E2D7B;
     --navy-active-pill: rgba(255, 255, 255, 0.15);
-    --orange-badge: #f59e0b;
+    --orange-badge: #fbbf24;
     --text-active: #ffffff;
     --text-inactive: #94a3b8;
     
-    --bg-main: #f8fafc;
+    --bg-main: #f4f7fb;
     --border-subtle: #e2e8f0;
     --text-dark: #0f172a;
     --text-main: #334155;
     --text-muted: #64748b;
-    --card-bg: #ffffff;
-
     --primary-blue: #0E2D7B;
-    --primary-blue-hover: #0A215E;
+    --primary-blue-hover: #081a4a;
     
     --gradient-primary: #0E2D7B;
-    --gradient-primary-hover: #0A215E;
+    --gradient-primary-hover: #081a4a;
 
     --font-size-brand: 24px;
     --font-size-nav: 15px;
@@ -84,7 +82,7 @@ body {
     width: 4px; 
     background: #ffffff; 
     border-radius: 0 4px 4px 0;
-    box-shadow: 2px 0 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 0 8px rgba(192, 132, 252, 0.5);
 }
 
 .nav-menu-item a { 
