@@ -391,7 +391,7 @@
                             <th style="width: 20%; ">Candidate Name</th>
                             <th style="width: 15%; ">Sub Dept.</th>
                             <th style="width: 15%; ">Interview Date & Time</th>
-                            <th style="width: 12%; ">Candidate Status</th>
+                            <th style="width: 12%; ">Interview Status</th>
                             <th style="width: 10%; text-align: center; ">HR Notes</th>
                             <th style="width: 18%; text-align: right; ">Actions</th>
                         </tr>
@@ -414,9 +414,9 @@
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </button>
                             </td>
-                            <td style="text-align: right; ">
+                            <td style="text-align: right; padding-right: 32px;">
                                 <div style="display: flex; justify-content: flex-end;">
-                                    <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Book Slot</button>
+                                    <button onclick="openRowBookingModal('Alan Turing', 'Operations')" class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Schedule Interview</button>
                                 </div>
                             </td>
                         </tr>
@@ -439,9 +439,9 @@
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </button>
                             </td>
-                            <td style="text-align: right; ">
+                            <td style="text-align: right; padding-right: 32px;">
                                 <div style="display: flex; justify-content: flex-end;">
-                                    <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Book Slot</button>
+                                    <button onclick="openRowBookingModal('Margaret Hamilton', 'Tech and Delivery')" class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Schedule Interview</button>
                                 </div>
                             </td>
                         </tr>
@@ -464,9 +464,9 @@
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </button>
                             </td>
-                            <td style="text-align: right; ">
+                            <td style="text-align: right; padding-right: 32px;">
                                 <div style="display: flex; justify-content: flex-end;">
-                                    <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Book Slot</button>
+                                    <button onclick="openRowBookingModal('John von Neumann', 'HR')" class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Schedule Interview</button>
                                 </div>
                             </td>
                         </tr>
@@ -489,9 +489,9 @@
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </button>
                             </td>
-                            <td style="text-align: right; ">
+                            <td style="text-align: right; padding-right: 32px;">
                                 <div style="display: flex; justify-content: flex-end;">
-                                    <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Book Slot</button>
+                                    <button onclick="openRowBookingModal('Tim Berners-Lee', 'Finance')" class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Schedule Interview</button>
                                 </div>
                             </td>
                         </tr>
@@ -508,15 +508,15 @@
                             <td>
                                 <div class="timestamp-txt" style="color:#64748b;">-</div>
                             </td>
-                            <td><span class="status-badge" style="background: #fef08a; color: #854d0e; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Pending Scheduling</span></td>
+                            <td><span class="status-badge" style="background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Could Not Happen Interview</span></td>
                             <td style="text-align: center;">
                                 <button onclick="openNotesModal('Linus Torvalds', this)" style="position: relative; width: 36px; height: 36px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; display: inline-flex; align-items: center; justify-content: center; cursor: pointer;">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </button>
                             </td>
-                            <td style="text-align: right; ">
+                            <td style="text-align: right; padding-right: 32px;">
                                 <div style="display: flex; justify-content: flex-end;">
-                                    <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Book Slot</button>
+                                    <button onclick="openRowBookingModal('Linus Torvalds', 'Tech and Delivery')" class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">Schedule Interview</button>
                                 </div>
                             </td>
                         </tr>
@@ -540,10 +540,10 @@
                             <th style="width: 12%; ">Panelist Name</th>
                             <th style="width: 10%; ">Panelist Feedback</th>
                             <th style="width: 10%; ">Interview Date & Time</th>
-                            <th style="width: 10%; ">CANDIDATE STATUS</th>
-                            <th style="width: 8%; text-align: center; ">VIEW Recording</th>
+                            <th style="width: 10%; ">INTERVIEW STATUS</th>
+                            <th style="width: 8%; text-align: center; ">Interview Recording</th>
                             <th style="width: 8%; text-align: center; ">HR NOTES</th>
-                            <th style="width: 10%; text-align: right; ">ACTIONS</th>
+                            <th style="width: 10%; text-align: right; padding-right: 32px;">ACTIONS</th>
                         </tr>
                     </thead>
                     <tbody class="candidate-row-group">
@@ -558,22 +558,35 @@
                             <td>
                                 <strong>Gaurav Paliwal</strong>
                             </td>
-                            <td><span class="status-badge" style="background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Submitted</span></td>
+                            <td>
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                    
+                                    <button onclick="openNotesModal('Panelist Feedback', this)" style="position: relative; width: 32px; height: 32px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0;">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                    </button>
+                                </div>
+                            </td>
                             <td>
                                 <div class="timestamp-txt" style="color:#0f172a; font-weight:500;">03 Jun 2026, 10:00 AM</div>
                             </td>
-                            <td><span class="status-badge" style="background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Completed</span></td>
+                            <td><span class="status-badge" style="background: #eff6ff; color: #1d4ed8; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Reviewed By HR</span></td>
                             <td style="text-align: center;">
-                                <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">View Recording</button>
+                                <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">View</button>
                             </td>
                             <td style="text-align: center;">
                                 <button onclick="openNotesModal('Grace Hopper', this)" style="position: relative; width: 36px; height: 36px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; display: inline-flex; align-items: center; justify-content: center; cursor: pointer;">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </button>
                             </td>
-                            <td style="text-align: right; ">
+                            <td style="text-align: right; padding-right: 32px;">
                                 <div style="display: flex; justify-content: flex-end;">
-                                    <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: var(--primary-blue); color: white;">Advance</button>
+                                    <select class="filter-select" style="padding: 6px 12px; font-size: 12px; border-radius: 6px; border: 1px solid #cbd5e1; background-color: #f8fafc; font-weight: 600; color: #475569;">
+                                        <option value="" disabled selected>Workflow Actions</option>
+                                        <option value="hr">Ready For HR Interview</option>
+                                        <option value="hold">On Hold</option>
+                                        <option value="reject">Reject</option>
+                                        <option value="complete">Review Completed</option>
+                                    </select>
                                 </div>
                             </td>
                         </tr>
@@ -590,22 +603,34 @@
                             <td>
                                 <strong>Ankit Mehta</strong>
                             </td>
-                            <td><span class="status-badge" style="background: #fee2e2; color: #b91c1c; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Pending Feedback</span></td>
+                            <td>
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                    <button onclick="openNotesModal('Panelist Feedback', this)" style="position: relative; width: 32px; height: 32px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0;">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                    </button>
+                                </div>
+                            </td>
                             <td>
                                 <div class="timestamp-txt" style="color:#0f172a; font-weight:500;">02 Jun 2026, 2:00 PM</div>
                             </td>
-                            <td><span class="status-badge" style="background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Completed</span></td>
+                            <td><span class="status-badge" style="background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Not Review</span></td>
                             <td style="text-align: center;">
-                                <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">View Recording</button>
+                                <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">View</button>
                             </td>
                             <td style="text-align: center;">
                                 <button onclick="openNotesModal('Ada Lovelace', this)" style="position: relative; width: 36px; height: 36px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; display: inline-flex; align-items: center; justify-content: center; cursor: pointer;">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </button>
                             </td>
-                            <td style="text-align: right; ">
+                            <td style="text-align: right; padding-right: 32px;">
                                 <div style="display: flex; justify-content: flex-end;">
-                                    <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f8fafc; color: var(--primary-blue);">Follow Up</button>
+                                    <select class="filter-select" style="padding: 6px 12px; font-size: 12px; border-radius: 6px; border: 1px solid #cbd5e1; background-color: #f8fafc; font-weight: 600; color: #475569;">
+                                        <option value="" disabled selected>Workflow Actions</option>
+                                        <option value="hr">Ready For HR Interview</option>
+                                        <option value="hold">On Hold</option>
+                                        <option value="reject">Reject</option>
+                                        <option value="complete">Review Completed</option>
+                                    </select>
                                 </div>
                             </td>
                         </tr>
@@ -622,22 +647,34 @@
                             <td>
                                 <strong>Linus Torvalds</strong>
                             </td>
-                            <td><span class="status-badge" style="background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Draft</span></td>
+                            <td>
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                    <button onclick="openNotesModal('Panelist Feedback', this)" style="position: relative; width: 32px; height: 32px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0;">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                    </button>
+                                </div>
+                            </td>
                             <td>
                                 <div class="timestamp-txt" style="color:#0f172a; font-weight:500;">01 Jun 2026, 11:30 AM</div>
                             </td>
-                            <td><span class="status-badge" style="background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Completed</span></td>
+                            <td><span class="status-badge" style="background: #eff6ff; color: #1d4ed8; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;">Reviewed By HR</span></td>
                             <td style="text-align: center;">
-                                <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">View Recording</button>
+                                <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f0f9ff; color: var(--primary-blue);">View</button>
                             </td>
                             <td style="text-align: center;">
                                 <button onclick="openNotesModal('Charles Babbage', this)" style="position: relative; width: 36px; height: 36px; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; display: inline-flex; align-items: center; justify-content: center; cursor: pointer;">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </button>
                             </td>
-                            <td style="text-align: right; ">
+                            <td style="text-align: right; padding-right: 32px;">
                                 <div style="display: flex; justify-content: flex-end;">
-                                    <button class="btn-primary-action" style="padding: 6px 12px; font-weight: 600; border: 1px solid var(--primary-blue); background: #f8fafc; color: var(--primary-blue);">Follow Up</button>
+                                    <select class="filter-select" style="padding: 6px 12px; font-size: 12px; border-radius: 6px; border: 1px solid #cbd5e1; background-color: #f8fafc; font-weight: 600; color: #475569;">
+                                        <option value="" disabled selected>Workflow Actions</option>
+                                        <option value="hr">Ready For HR Interview</option>
+                                        <option value="hold">On Hold</option>
+                                        <option value="reject">Reject</option>
+                                        <option value="complete">Review Completed</option>
+                                    </select>
                                 </div>
                             </td>
                         </tr>
@@ -681,7 +718,8 @@
                 </div>
                 <div class="form-group">
                     <label id="panellistSectionLabel">Available Panellists</label>
-                    <div class="checkbox-dropdown-panel" id="panellistCheckboxContainer"></div>
+                    <input type="text" id="panellistSearchInput" class="form-control" placeholder="Search Name by Panelist" onkeyup="filterPanellists()" style="margin-bottom: 8px; font-size: 13px;">
+                    <div class="checkbox-dropdown-panel" id="panellistCheckboxContainer" style="border: none; padding: 0; background: transparent; box-shadow: none;"></div>
                 </div>
                 <div class="form-group">
                     <label for="selectDuration">Session Duration Frame</label>
@@ -831,13 +869,18 @@
             
             displayCandidateName.value = candidateName;
             panellistSectionLabel.innerText = `Select Panellists from ${candidateDept}:`;
+            document.getElementById('panellistSearchInput').value = '';
             
             panellistCheckboxContainer.innerHTML = '';
             const list = globalDepartmentPanellistMatrix[candidateDept] || [];
             
             if (list.length === 0) {
-                panellistCheckboxContainer.innerHTML = `<div style="font-size:12px; color:#ef4444; font-style:italic;">No active panellists found registered under ${candidateDept}. Add them via the department cards above to demonstrate live matching to stakeholders.</div>`;
+                panellistCheckboxContainer.innerHTML = '';
+                panellistCheckboxContainer.style.display = 'none';
+                document.getElementById('panellistSearchInput').style.display = 'none';
             } else {
+                panellistCheckboxContainer.style.display = 'block';
+                document.getElementById('panellistSearchInput').style.display = 'block';
                 list.forEach(p => {
                     const label = document.createElement('label');
                     label.className = 'checkbox-item';
@@ -846,6 +889,15 @@
                 });
             }
             scheduleModalOverlay.classList.add('active');
+        }
+
+        function filterPanellists() {
+            const query = document.getElementById('panellistSearchInput').value.toLowerCase();
+            const labels = document.querySelectorAll('#panellistCheckboxContainer .checkbox-item');
+            labels.forEach(label => {
+                const text = label.innerText.toLowerCase();
+                label.style.display = text.includes(query) ? 'block' : 'none';
+            });
         }
 
         function toggleScheduleModal(show) { if(!show) scheduleModalOverlay.classList.remove('active'); }
