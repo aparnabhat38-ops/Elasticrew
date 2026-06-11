@@ -258,6 +258,10 @@
             padding-top: 12px !important;
             padding-bottom: 12px !important;
         }
+        .enterprise-table th:first-child,
+        .enterprise-table td:first-child {
+            padding-left: 24px !important;
+        }
     </style>
 </head>
 
@@ -352,33 +356,7 @@
         <!-- Pipeline Stages Label -->
 
 
-        <!-- Enterprise Filter Bar -->
-        <section class="enterprise-filter-bar" style="margin-bottom: 20px; display:flex; gap:12px; align-items:center;">
-            <select class="filter-select"
-                style="min-width: 150px; padding: 8px 12px; font-size: 13px; border-radius: 6px; border: 1px solid #cbd5e1;">
-                <option>All Departments</option>
-                <option>Engineering</option>
-                <option>Product</option>
-            </select>
-            
-            <select class="filter-select"
-                style="min-width: 150px; padding: 8px 12px; font-size: 13px; border-radius: 6px; border: 1px solid #cbd5e1;">
-                <option>All Statuses</option>
-                <option>Pending Review</option>
-                <option>Review Completed</option>
-                <option>On Hold</option>
-                <option>Rejected</option>
-            </select>
-            <select class="filter-select" style="min-width: 150px; padding: 8px 12px; font-size: 13px; border-radius: 6px; border: 1px solid #cbd5e1;">
-                <option>All Dates</option>
-                <option>Last 7 Days</option>
-                <option>Last 30 Days</option>
-                <option>This Quarter</option>
-            </select>
-            <button class="add-filter-btn"
-                style="padding: 8px 16px; border-color: var(--primary-blue); background: var(--primary-blue); color: #fff;">Apply
-                Filters</button>
-        </section>
+
 
         <!-- Enterprise Data Grid -->
         <section class="candidates-section">
